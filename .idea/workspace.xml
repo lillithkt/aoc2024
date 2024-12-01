@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="Initial Project Bootstrap">
-      <change afterPath="$PROJECT_DIR$/inputs/1/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day1/Day1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day.kt" afterDir="false" />
+    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="Day: 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -42,27 +42,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build aoc2024.executor": "Run",
-    "Kotlin.All Days.executor": "Run",
-    "Kotlin.Latest Day, Both Parts.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lillith/code/aoc2024/src/main/kotlin/days/day1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build aoc2024.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.All Days.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.Latest Day, Both Parts.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lillith/code/aoc2024/src/main/kotlin/days/day1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days\day1" />
@@ -77,7 +77,7 @@
       <recent name="gay.lilyy.aoc2024.days.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Latest Day, Both Parts">
+  <component name="RunManager" selected="Kotlin.All Days">
     <configuration name="All Days" type="JetRunConfigurationType">
       <option name="MAIN_CLASS_NAME" value="gay.lilyy.aoc2024.MainKt" />
       <module name="aoc2024.main" />
@@ -123,7 +123,7 @@
       <updated>1733075274753</updated>
       <workItem from="1733075275849" duration="114000" />
       <workItem from="1733075853248" duration="10000" />
-      <workItem from="1733075889811" duration="4828000" />
+      <workItem from="1733075889811" duration="5479000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Bootstrap">
       <option name="closed" value="true" />
@@ -133,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733080783337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="it didnt commit the files that didnt pass analysis????">
+      <option name="closed" value="true" />
+      <created>1733080958151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733080958151</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Day: 1">
+      <option name="closed" value="true" />
+      <created>1733081076454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733081076454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Project Bootstrap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Project Bootstrap" />
+    <MESSAGE value="it didnt commit the files that didnt pass analysis????" />
+    <MESSAGE value="Day: 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day: 1" />
   </component>
 </project>

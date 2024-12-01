@@ -1,7 +1,7 @@
 package gay.lilyy.aoc2024
 
 import org.reflections.Reflections
-import kotlin.system.measureNanoTime
+import kotlin.system.measureTimeMillis
 
 suspend fun main(args: Array<String>) {
     val days = Reflections("gay.lilyy.aoc2024.days").getSubTypesOf(Day::class.java).map { it.getDeclaredConstructor().newInstance()}
@@ -53,26 +53,26 @@ suspend fun main(args: Array<String>) {
         if (partNum == 0 || partNum == 1) {
             println("===== Part 1 =====")
             var result: Any? = null
-            val part1Time = measureNanoTime {
+            val part1Time = measureTimeMillis {
                 result = day.part1()
             }
             println("Result: $result")
-            println("Time: $part1Time ns")
+            println("Time: $part1Time ms")
             dayTime += part1Time
         }
         if (partNum == 0 || partNum == 2) {
             println("===== Part 2 =====")
             var result: Any? = null
-            val part2Time = measureNanoTime {
+            val part2Time = measureTimeMillis {
                 result = day.part2()
             }
             println("Result: $result")
-            println("Time: $part2Time ns")
+            println("Time: $part2Time ms")
             dayTime += part2Time
         }
-        println("Total Time: $dayTime ns")
+        println("Total Time for Day ${day.day}: $dayTime ms")
         totalTime += dayTime
     }
 
-    println("========= Total Time: $totalTime ns =========")
+    println("========= Total Time: $totalTime ms =========")
 }
