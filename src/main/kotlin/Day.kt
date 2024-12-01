@@ -1,12 +1,10 @@
 ﻿package gay.lilyy.aoc2024
 import java.io.File
-import java.nio.file.Files.exists
-
 abstract class Day {
-    public abstract val day: Int
-    public abstract suspend fun part1(): Any
-    public abstract suspend fun part2(): Any
-    public suspend fun getInput(part: Int? = null): File {
+    abstract val day: Int
+    abstract suspend fun part1(): Any
+    abstract suspend fun part2(): Any
+    fun getInput(part: Int? = null): File {
         var exampleFile: File? = null
         var inputFile: File? = null
         if (part != null) {
