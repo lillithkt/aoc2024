@@ -6,7 +6,7 @@ import gay.lilyy.aoc2024.Day
 class Day1 : Day() {
     override val day = 1
 
-    private fun getLists(): Pair<MutableList<Int>, MutableList<Int>> {
+    private suspend fun getLists(): Pair<MutableList<Int>, MutableList<Int>> {
         val leftList = mutableListOf<Int>()
         val rightList = mutableListOf<Int>()
         val input = getInput().readLines()

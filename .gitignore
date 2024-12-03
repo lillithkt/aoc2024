@@ -46,4 +46,5 @@ bin/
 
 
 ### Inputs ###
-/inputs/**/input.txt
+/data/inputs/**/input.txt
+/data/sessioncookie.txt

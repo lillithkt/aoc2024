@@ -3,7 +3,11 @@ package gay.lilyy.aoc2024
 import org.reflections.Reflections
 import kotlin.system.measureTimeMillis
 
-suspend fun main(args: Array<String>) {
+object RuntimeStorage {
+    var exampleInput = false
+}
+suspend fun main(argsArray: Array<String>) {
+    val args = argsArray.toMutableList()
     val days = Reflections("gay.lilyy.aoc2024.days").getSubTypesOf(Day::class.java).map { it.getDeclaredConstructor().newInstance()}
     val daysSorted = days.sortedBy { it.day.toInt() }
 
@@ -13,6 +17,13 @@ suspend fun main(args: Array<String>) {
     }
     var dayNum: Int? = null
     var partNum: Int? = null
+
+    if (args.contains("--example") || args.contains("-e")) {
+        RuntimeStorage.exampleInput = true
+        args.remove("--example")
+        args.remove("-e")
+    }
+
     if (args.isEmpty()) {
         println("No day specified, defaulting to latest day")
         dayNum = daysSorted.last().day

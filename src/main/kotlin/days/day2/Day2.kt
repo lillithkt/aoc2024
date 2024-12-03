@@ -7,7 +7,7 @@ import gay.lilyy.aoc2024.mapNotException
 class Day2 : Day() {
     override val day = 2
 
-    private fun getReports(): List<List<Int>> = getInput().readLines().map {
+    private suspend fun getReports(): List<List<Int>> = getInput().readLines().map {
         it.split(" ").map {
             String(it.toByteArray(Charsets.ISO_8859_1)).split("").mapNotException { it.toInt() }.joinToString("").toInt()
         }

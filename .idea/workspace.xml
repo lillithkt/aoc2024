@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="fix: dont use nanoseconds&#10;last year was in rust and i tried micro optimizations and it takes much longer in kotlin">
-      <change afterPath="$PROJECT_DIR$/inputs/2/example.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Utils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day2/Day2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/days/day2/README.md" afterDir="false" />
+    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/1/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/1/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/2/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/2/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/3/1/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/3/example1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/3/2/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/3/example2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day1/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day1/Day1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day2/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day2/Day2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,38 +53,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build aoc2024.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.All Days.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.Latest Day, Both Parts.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lillith/code/aoc2024/src/main/kotlin/days/day2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build aoc2024.executor": "Run",
+    "Kotlin.All Days.executor": "Run",
+    "Kotlin.Latest Day, Both Parts, Example Input.executor": "Run",
+    "Kotlin.Latest Day, Both Parts.executor": "Debug",
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/lillith/code/aoc2024/inputs/3/2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days\day2" />
+      <recent name="C:\Users\lillith\code\aoc2024\inputs\3\2" />
+      <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days\day3" />
       <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days" />
+      <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days\day2" />
       <recent name="C:\Users\lillith\code\aoc2024\src\main\kotlin\days\day1" />
-      <recent name="C:\Users\lillith\code\aoc2024\inputs\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lillith\code\aoc2024\data\inputs\3" />
+      <recent name="C:\Users\lillith\code\aoc2024\data\inputs" />
+      <recent name="C:\Users\lillith\code\aoc2024\data" />
+      <recent name="C:\Users\lillith\code\aoc2024\inputs\3\1" />
       <recent name="C:\Users\lillith\code\aoc2024\inputs\1" />
-      <recent name="C:\Users\lillith\code\aoc2024\inputs\" />
-      <recent name="C:\Users\lillith\code\aoc2024\inputs\1\1" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
       <recent name="gay.lilyy.aoc2024.days.day1" />
@@ -101,8 +112,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Latest Day, Both Parts, Example Input" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="gay.lilyy.aoc2024.MainKt" />
+      <module name="aoc2024.main" />
+      <option name="PROGRAM_PARAMETERS" value="-e" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Kotlin.All Days" />
+      <item itemvalue="Kotlin.Latest Day, Both Parts, Example Input" />
       <item itemvalue="Kotlin.Latest Day, Both Parts" />
     </list>
     <recent_temporary>
@@ -132,6 +153,9 @@
       <workItem from="1733075889811" duration="6580000" />
       <workItem from="1733188483338" duration="3743000" />
       <workItem from="1733237357854" duration="63000" />
+      <workItem from="1733237762504" duration="2226000" />
+      <workItem from="1733240234183" duration="301000" />
+      <workItem from="1733240915488" duration="1529000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Bootstrap">
       <option name="closed" value="true" />
@@ -165,7 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1733081787866</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day 2&#10;i was a bit late :p">
+      <option name="closed" value="true" />
+      <created>1733238397036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733238397036</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Template Day">
+      <option name="closed" value="true" />
+      <created>1733238485705</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733238485705</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls">
+      <option name="closed" value="true" />
+      <created>1733240024280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733240024280</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +224,30 @@
     <MESSAGE value="it didnt commit the files that didnt pass analysis????" />
     <MESSAGE value="Day: 1" />
     <MESSAGE value="fix: dont use nanoseconds&#10;last year was in rust and i tried micro optimizations and it takes much longer in kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: dont use nanoseconds&#10;last year was in rust and i tried micro optimizations and it takes much longer in kotlin" />
+    <MESSAGE value="day 2&#10;i was a bit late :p" />
+    <MESSAGE value="Template Day" />
+    <MESSAGE value="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="((String)cookie).value[96]" custom="java.lang.String" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
