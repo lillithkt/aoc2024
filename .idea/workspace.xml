@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/1/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/1/example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/2/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/2/example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/3/1/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/3/example1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputs/3/2/example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/3/example2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Day.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Day.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day1/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day1/Day1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/days/day2/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/days/day2/Day2.kt" afterDir="false" />
-    </list>
+    <list default="true" id="f1169c2e-1695-409d-b891-d286878aa8a4" name="Changes" comment="input downloader" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +142,7 @@
       <workItem from="1733237357854" duration="63000" />
       <workItem from="1733237762504" duration="2226000" />
       <workItem from="1733240234183" duration="301000" />
-      <workItem from="1733240915488" duration="1529000" />
+      <workItem from="1733240915488" duration="1807000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Project Bootstrap">
       <option name="closed" value="true" />
@@ -213,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733240024280</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="input downloader">
+      <option name="closed" value="true" />
+      <created>1733242755137</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733242755137</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,20 +222,16 @@
     <MESSAGE value="day 2&#10;i was a bit late :p" />
     <MESSAGE value="Template Day" />
     <MESSAGE value="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 3&#10;i got stuck bc i didnt realize the example for part 1 and 2 had changed and it wasnt picking up any do or don't calls" />
+    <MESSAGE value="input downloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="input downloader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/DownloadInput.kt</url>
-          <line>41</line>
-          <option name="timeStamp" value="4" />
+          <line>38</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
