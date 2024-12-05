@@ -6,6 +6,8 @@ abstract class Day {
     abstract val day: Int
     abstract suspend fun part1(): Any
     abstract suspend fun part2(): Any
+
+    open suspend fun init() {}
     suspend fun getInput(part: Int? = null): File {
         var exampleFile: File? = null
         var inputFile: File? = null

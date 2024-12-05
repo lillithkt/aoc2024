@@ -12,3 +12,12 @@ fun <T, R> List<T>.mapNotException(transform: (T) -> R): List<R> {
     }
     return result
 }
+
+fun killBOM(input: String): String {
+    return if (input.startsWith(0xFEFF.toChar())) {
+        input.substring(1)
+    } else {
+        input
+    }
+}
+

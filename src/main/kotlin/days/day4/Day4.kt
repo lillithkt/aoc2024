@@ -1,6 +1,7 @@
 ﻿package gay.lilyy.aoc2024.days.day4
 
 import gay.lilyy.aoc2024.Day
+import gay.lilyy.aoc2024.killBOM
 
 @Suppress("unused")
 class Day4 : Day() {
@@ -80,14 +81,9 @@ class Day4 : Day() {
     }
 
     override suspend fun part2(): Any {
-        val lines = getInput().readLines().map {
-            it.toList().map { it.lowercaseChar() }.mapNotNull {
-                // i hate bom with a passion
-                if (it == 0xFEFF.toChar()) {
-                    return@mapNotNull null
-                }
-                it
-            }
+        val lines = getInput().readLines().map { killBOM(it) }
+            .map {
+            it.toList().map { it.lowercaseChar() }
         }
 
         var xMasCount = 0

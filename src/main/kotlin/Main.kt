@@ -60,6 +60,8 @@ suspend fun main(argsArray: Array<String>) {
     for (day in daysToRun) {
         println("========= Day ${day.day} =========")
 
+        day.init()
+
         var dayTime = 0L
         if (partNum == 0 || partNum == 1) {
             println("===== Part 1 =====")
