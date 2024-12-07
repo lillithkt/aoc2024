@@ -32,7 +32,6 @@ suspend fun downloadInput(day: Int): File? {
         println("No session cookie found, please add it to data/sessioncookie.txt")
         return null
     }
-    println(cookie)
     val res = client.get("https://adventofcode.com/2024/day/$day/input") {
         header("Cookie", cookie)
     }
